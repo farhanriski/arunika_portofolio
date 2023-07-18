@@ -637,12 +637,20 @@ video {
   height: 2.5rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
 
 .h-96 {
   height: 24rem;
+}
+
+.h-52 {
+  height: 13rem;
 }
 
 .w-full {
@@ -689,16 +697,16 @@ video {
   gap: 1.75rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-b-2xl {
@@ -788,6 +796,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
