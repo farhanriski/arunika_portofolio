@@ -572,6 +572,10 @@ video {
   top: 0px;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
 .top-\[-400px\] {
   top: -400px;
 }
@@ -580,8 +584,12 @@ video {
   top: 80px;
 }
 
-.top-2 {
-  top: 0.5rem;
+.-top-5 {
+  top: -1.25rem;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -590,10 +598,6 @@ video {
 
 .z-\[-1\] {
   z-index: -1;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .mx-2 {
@@ -641,6 +645,18 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -651,6 +667,10 @@ video {
 
 .h-96 {
   height: 24rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -667,6 +687,11 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.columns-3xs {
+  -moz-columns: 16rem;
+       columns: 16rem;
 }
 
 .flex-row {
@@ -691,6 +716,10 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -741,6 +770,16 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -798,6 +837,58 @@ video {
   padding-top: 1.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-60 {
+  padding-bottom: 15rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-56 {
+  padding-bottom: 14rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[-\] {
+  padding-top: -;
+}
+
+.pt-\[-5\] {
+  padding-top: -5;
+}
+
+.pt-\[5\] {
+  padding-top: 5;
+}
+
+.pt-\[-7\] {
+  padding-top: -7;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -842,8 +933,32 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-costum-50 {
@@ -859,6 +974,21 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.text-stone-200 {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+
+.text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
