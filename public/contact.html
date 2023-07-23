@@ -16,12 +16,12 @@
           <span class="text-2xl font-[Poppins] cursor-pointer">
             <img class="h-10 inline" src="assets/Asset 4100.png" />
           </span>
-  
+
           <span class="text-3xl cursor-pointer mx-2 tablet:hidden block">
-            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            <ion-icon name="menu" onclick="Menu(this)" class="text-white"></ion-icon>
           </span>
         </div>
-  
+
         <ul
           class="tablet:flex tablet:items-center z-[-1] tablet:z-auto tablet:static absolute tablet:bg-costum-50 bg-costum-50 w-full left-0 tablet:w-auto tablet:py-0 py-4 tablet:pl-0 pl-7 tablet:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 tablet:rounded-lg font-sans"
         >
@@ -48,19 +48,20 @@
           e.name === "menu" ? ((e.name = "close"), list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : ((e.name = "menu"), list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"));
         }
       </script>
-      </div>
-      <!-- NAVBAR END-->
+    </div>
+    <!-- NAVBAR END-->
 
-    
-      <!-- footer -->
+    <!-- footer -->
     <footer class="bg-black text-white p-10 flex flex-row justify-center fixed bottom-0 w-full gap-3">
       <div>
-        <img src="assets/Asset 4100.png" class="h-7"/>
+        <img src="assets/Asset 4100.png" class="h-7" />
       </div>
       <div class="container mx-auto text-left text-xs font-sans">
-        <p>Thank you so much for your interest with Bare Odds! We believe that there’s no such thing as coincidence. The universe align for us to meet. <br>
+        <p>
+          Thank you so much for your interest with Bare Odds! We believe that there’s no such thing as coincidence. The universe align for us to meet. <br />
 
-          Lets connect, reach out to us if you’d like to speak further at: arunika@hello.com</p>
+          Lets connect, reach out to us if you’d like to speak further at: arunika@hello.com
+        </p>
         <p class="mt-4">© 2023 Arunika.laa All Rights Reserved.</p>
       </div>
     </footer>
