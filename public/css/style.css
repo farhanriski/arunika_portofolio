@@ -941,6 +941,22 @@ video {
   padding-top: 1rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -993,6 +1009,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
