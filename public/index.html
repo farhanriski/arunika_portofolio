@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <style>
+      /* Animasi berkedip */
+      @keyframes blinking {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      /* Terapkan animasi pada judul */
+      .blinking-title {
+        animation: blinking 2s infinite;
+      }
+    </style>
   </head>
 
   <body class="font-serif bg-costum-50">
@@ -63,7 +76,7 @@
     <div class="items-center text-center pt-7 text-white">
       <div>
         <hr class="m-7">
-        <h1 class="text-3xl tablet:text-5xl">Hello, couples</h1>
+        <h1 class="text-3xl tablet:text-5xl blinking-title">Hello, couples</h1>
       </div>
       <div class="text-center">
         <p class="px-7 tablet:px-28 pt-7  text-xs tablet:text-lg">
