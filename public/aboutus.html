@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      /* Sembunyikan elemen anggota tim */
+      .team-member {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+    </style>
   </head>
   <body class="font-serif bg-costum-50">
     <!-- NAVBAR -->
@@ -52,43 +60,76 @@
     <!-- NAVBAR END-->
 
     <!-- Team -->
-    <div class="pt-24 px-4 pb-7">
-      <div class="">
-        <h2 class="text-3xl text-white italic">Team of Arunika</h2>
-        <div class="flex flex-row w-full bg-contain pt-5 gap-3 pb-7">
+    <h2 class="text-3xl text-white italic pt-28 text-center">Team of Arunika</h2>
+    <div class="mx-7 pb-28">
+      <hr class="my-3">
+      <!-- Tim Anggota 1 -->
+      <div class="flex flex-row w-full bg-contain py-3 gap-3 team-member">
+        <!-- Isi data anggota tim -->
+        <div class="flex flex-row w-full bg-contain gap-3 pb-3">
           <div class="w-1/2">
             <img class="rounded-xl" src="assets/contohpotrait.png" />
           </div>
           <div class="w-full">
             <h2 class="text-white text-2xl italic font-semibold">gusti dani yusmiri.</h2>
-            <p class="text-white text-xs pt-3">head of photography</p>
-            <pre class="pt-7 text-white text-xs italic"><a href="https://www.instagram.com/gustidaniy/">portofolio</a></pre>
+            <p class="text-white text-xs pt-2">head of photography</p>
+            <pre class="pt-3 text-white text-xs italic"><a href="https://www.instagram.com/gustidaniy/">portofolio</a></pre>
           </div>
         </div>
-        <hr>
-        <div class="flex flex-row w-full bg-contain pt-7 gap-3 text-right pb-7">
-          <div class="w-full">
-            <h2 class="text-white text-2xl italic font-semibold">farhan riski.</h2>
-            <p class="text-white text-xs pt-3">videographer & photographer</p>
-            <pre class="pt-7 text-white text-xs italic"><a href="https://www.instagram.com/farhanriskiii/">portofolio</a></pre>
-          </div>
-          <div class="w-1/2">
-            <img class="rounded-xl" src="assets/contohpotrait.png" />
-          </div>
-        </div>
-        <hr>
-        <div class="flex flex-row w-full bg-contain gap-3 pt-7">
+      </div>
+      <hr />
+
+      <!-- Tim Anggota 2 -->
+      <div class="flex flex-row w-full bg-contain py-3 gap-3 team-member">
+        <!-- Isi data anggota tim -->
+        <div class="flex flex-row w-full bg-contain gap-3 pb-3">
           <div class="w-1/2">
             <img class="rounded-xl" src="assets/contohpotrait.png" />
           </div>
           <div class="w-full">
-            <h2 class="text-white text-2xl italic font-semibold">fathur rahman.</h2>
-            <p class="text-white text-xs pt-3">head of videography</p>
-            <pre class="pt-7 text-white text-xs italic"><a href="https://www.instagram.com/halothurr/">portofolio</a></pre>
+            <h2 class="text-white text-2xl italic font-semibold">fathur<br>rahman.</h2>
+            <p class="text-white text-xs pt-2">head of videography</p>
+            <pre class="pt-3 text-white text-xs italic"><a href="https://www.instagram.com/gustidaniy/">portofolio</a></pre>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Tim Anggota 3 -->
+      <div class="flex flex-row w-full bg-contain py-3 gap-3 team-member">
+        <!-- Isi data anggota tim -->
+        <div class="flex flex-row w-full bg-contain gap-3 pb-3">
+          <div class="w-1/2">
+            <img class="rounded-xl" src="assets/contohpotrait.png" />
+          </div>
+          <div class="w-full">
+            <h2 class="text-white text-2xl italic font-semibold">farhan riski rianda.</h2>
+            <p class="text-white text-xs pt-2">photographer & videographer</p>
+            <pre class="pt-3 text-white text-xs italic"><a href="https://www.instagram.com/gustidaniy/">portofolio</a></pre>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Ambil semua elemen anggota tim
+        const teamMembers = document.querySelectorAll('.team-member');
+    
+        // Fungsi untuk menerapkan animasi fading in
+        function animateTeamMembers() {
+          teamMembers.forEach((member, index) => {
+            setTimeout(() => {
+              member.style.opacity = 1;
+              member.style.transform = 'translateY(0)';
+            }, 300 * index);
+          });
+        }
+    
+        // Panggil fungsi animasi setelah halaman selesai di-load
+        animateTeamMembers();
+      });
+    </script>
+    
     <!-- Team End -->
 
     <!-- footer -->
