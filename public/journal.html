@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      /* Galeri Slide */
+      .slider-container {
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+    
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .slider-image {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    
   </head>
   <body class="font-serif bg-costum-50">
     <!-- NAVBAR -->
@@ -64,8 +84,13 @@
       </div>
       <div class="text-white tablet:items-center tablet:flex tablet:gap-5">
         <div class="tablet:w-1/2">
-          <a href="">
-          <img src="assets/jurnal1.jpg" class="w-full tablet:w-full rounded-2xl" /></a>
+          <div class="slider-container">
+            <div class="slider">
+              <img src="assets/jurnal1.jpg" alt="New Year 2024" class="slider-image" />
+              <img src="assets/dedi&miftah-18.jpg" alt="Another Image" class="slider-image" />
+              <!-- Tambahkan lebih banyak gambar slider di sini -->
+            </div>
+          </div>          
         </div>
         <div class="z-0 top-2">
         <h2 class="pt-3 text-2xl">new year 2024.</h2>
@@ -73,7 +98,31 @@
         </div>
       </div>
     </div>
-
+    <script>
+      // Ambil elemen slider
+      const slider = document.querySelector('.slider');
+      // Ambil daftar gambar slider
+      const sliderImages = document.querySelectorAll('.slider-image');
+      // Hitung jumlah gambar slider
+      const numImages = sliderImages.length;
+      // Inisialisasi indeks gambar yang sedang ditampilkan
+      let currentIndex = 0;
+    
+      // Fungsi untuk memindahkan slider
+      function moveSlider() {
+        // Hitung pergeseran berikutnya berdasarkan lebar gambar
+        const translateX = -currentIndex * sliderImages[0].clientWidth;
+        // Geser slider
+        slider.style.transform = `translateX(${translateX}px)`;
+    
+        // Update indeks gambar berikutnya
+        currentIndex = (currentIndex + 1) % numImages;
+      }
+    
+      // Panggil fungsi moveSlider setiap 3 detik (atur sesuai preferensi Anda)
+      setInterval(moveSlider, 3000);
+    </script>
+    
     <!-- footer -->
     <footer class="bg-black text-white p-10 flex flex-row justify-center  bottom-0 w-full gap-3">
       <div>
